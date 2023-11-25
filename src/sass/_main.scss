@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9f1f8;
+  height: 100vh;
+}
+
+.search-form {
+  background-color: #1c2425;
+  margin-bottom: 50px;
+  padding: 30px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.search-form input {
+  padding: 15px 40px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 50%;
+  max-width: 700px;
+  border: none;
+}
+
+.search-form button {
+  padding: 15px 40px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 10%;
+  min-width: 50px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.search-form button:hover,
+.search-form button:focus {
+  background-color: #d6dee4;
+}
+
+.search-form button:hover,
+.search-form button:focus,
+.search-form input:hover,
+.search-form input:focus {
+  outline: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  flex: 1 1 auto;
+  margin-top: 140px;
+}
+
+.photo-card {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px #000000a8;
+  height: 430px;
+}
+
+.gallery__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.photo-card__img {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  background-size: cover;
+}
+.photo-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item b {
+  margin-bottom: 10px;
+}
+
+.bottom {
+  padding: 30px 0;
+  background-color: #1c2425;
+}
+
+.load-more {
+  display: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.load-more:hover,
+.load-more:focus {
+  background-color: #d6dee4;
+}
